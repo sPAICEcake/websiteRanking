@@ -8,7 +8,7 @@ def get_full_tranco_list():
     t = Tranco(cache=True, cache_dir='.tranco', account_email="claeysolivier@hotmail.com",
                api_key="bca37554dcd54b78a5592aa4ac3b6d55")
     latest_tranco_list = t.list()
-    latest_tranco_array = np.array(latest_tranco_list.top(100000))
+    latest_tranco_array = np.array(latest_tranco_list.top(1000000))
     return latest_tranco_array
 
 
@@ -26,7 +26,7 @@ def get_majestic_list(d):
         }
     )
     latest_majestic_list = t.list(list_id=c[1])
-    latest_majestic_array = np.array(latest_majestic_list.top(100000))
+    latest_majestic_array = np.array(latest_majestic_list.top(1000000))
     return latest_majestic_array
 
 
