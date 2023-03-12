@@ -16,7 +16,7 @@ def compare(d1, d2, list1, list2):
                 percentage = 0
             else:
                 percentage = - float((index2-index1)/index2) * 100
-            if percentage > 0.0:
+            if percentage > 2.0:
                 out = [str(entry), percentage,int(index1-index2), index1]
                 writer.writerow(out)
     f.close()
