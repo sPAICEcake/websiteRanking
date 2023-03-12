@@ -44,4 +44,4 @@ def get_all_data():
         time.sleep(5)
         list_of_lists.append(np.array(get_majestic_list(da)))
     list_of_lists = np.array(list_of_lists)
-    print(list_of_lists)
+    return date_list, list_of_lists
